@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+   body {
+    display: grid;
+    align-items: center;
+    background-image: url(../images/bjuti.jpg);
+    image-resolution:initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 340px;
+
+  }
+
+  [class*="col-"] {
+    float:none;
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .glossy_container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height:fit-content;
+    padding-bottom: 7%;
+    padding-top: 7%;
+    background-color: rgba(214, 226, 240, 0.4);
+    box-shadow: 20px 20px 20px rgba(123, 135, 157, 0.3);
+    border: 2px solid white;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    word-wrap: break-word;
+    min-width: 340px;
+  }
+
+  .qr_container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 20px 20px 20px rgba(123, 135, 157, 0.3);
+    border-radius: 15px;
+    max-width: min-content;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: 'Outfit', sans-serif;
+    min-width: 330px;
+}
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: 'Outfit', sans-serif;
+  }
+ p {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 15px;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 25px;
+ }
+  img {
+    margin: 15px;
+    border-radius: 15px;
+  }
+
+  @media only screen and (max-width: 375px)
+  {
+        .glossy_container{height: 100%; width: 100%; border: 0px};
+        .background{background-clip:border-box};
+  }
+  @media screen and (max-width: 1440px)
+  {
+      .glossy_container{height: 100%; width: 100%; border: 0px}
+  }
+  @media screen and (min-width: 1440px)
+  {
+
+  }
+
